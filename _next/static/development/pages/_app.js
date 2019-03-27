@@ -265,7 +265,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
 /* harmony import */ var _styles_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/Header */ "./components/styles/Header.js");
 /* harmony import */ var _styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/GlobalStyles */ "./components/styles/GlobalStyles.js");
+/* harmony import */ var _AppProvider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AppProvider */ "./components/AppProvider.js");
 var _jsxFileName = "/Users/avshash/Documents/Projects/portfolio/components/Header.js";
+
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
 
 
 
@@ -276,44 +282,61 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Header__WEBPACK_IMPORTED_MODULE_3__["StyledHeader"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
-    passHref: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Header__WEBPACK_IMPORTED_MODULE_3__["Brand"], {
-    color: _styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_4__["colors"].bg.ripeLemon,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "initials",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppProvider__WEBPACK_IMPORTED_MODULE_5__["AppContext"].Consumer, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }, "VS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "fullname",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "Vishal Sharma"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
+  }, function (context) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/",
+      passHref: true,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Header__WEBPACK_IMPORTED_MODULE_3__["Brand"], {
+      onClick: function onClick() {
+        return context.state.showMenu && context.toggleMenu();
+      },
+      color: _styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_4__["colors"].bg.ripeLemon,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      className: "initials",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, "VS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      className: "fullname",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, "Vishal Sharma"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], _extends({}, context, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    })));
   }));
 };
 
@@ -414,128 +437,110 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/Header */ "./components/styles/Header.js");
 /* harmony import */ var _styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/GlobalStyles */ "./components/styles/GlobalStyles.js");
-/* harmony import */ var _AppProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AppProvider */ "./components/AppProvider.js");
 var _jsxFileName = "/Users/avshash/Documents/Projects/portfolio/components/Nav.js";
 
 
 
 
 
-
-var NavItems = function NavItems() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppProvider__WEBPACK_IMPORTED_MODULE_4__["AppContext"].Consumer, {
+var NavItems = function NavItems(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Header__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
+    onClick: props.toggleMenu,
+    accent: _styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["colors"].accent.mandy,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, function (context) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Header__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
-      onClick: context.toggleMenu,
-      accent: _styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["colors"].accent.mandy,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      prefetch: true,
-      href: "/about",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    }, "about"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Header__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
-      onClick: context.toggleMenu,
-      accent: _styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["colors"].accent.danube,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      prefetch: true,
-      href: "/projects",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
-    }, "projects"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Header__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
-      onClick: context.toggleMenu,
-      accent: _styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["colors"].accent.silverTree,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      prefetch: true,
-      href: "/contact",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 24
-      },
-      __self: this
-    }, "contact"))));
-  });
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    prefetch: true,
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, "about"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Header__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
+    onClick: props.toggleMenu,
+    accent: _styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["colors"].accent.danube,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    prefetch: true,
+    href: "/projects",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "projects"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Header__WEBPACK_IMPORTED_MODULE_2__["NavItem"], {
+    onClick: props.toggleMenu,
+    accent: _styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["colors"].accent.silverTree,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    prefetch: true,
+    href: "/contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "contact"))));
 };
 
-var Nav = function Nav() {
+var Nav = function Nav(props) {
+  var className = "nav--collapsed ".concat(props.state.showMenu ? 'ic-cross' : 'ic-menu');
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Header__WEBPACK_IMPORTED_MODULE_2__["StyledNav"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 32
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavItems, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 33
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppProvider__WEBPACK_IMPORTED_MODULE_4__["AppContext"].Consumer, {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    onClick: props.toggleMenu,
+    className: className,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 34
     },
     __self: this
-  }, function (context) {
-    var className = "nav--collapsed ".concat(context.state.showMenu ? 'ic-cross' : 'ic-menu');
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-      onClick: context.toggleMenu,
-      className: className,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 42
-      },
-      __self: this
-    });
   }));
 };
 
@@ -559,6 +564,9 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/avshash/Documents/Projects/portfolio/components/OverlayMenu.js";
 
 
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
 
 
 var OverlayMenu = function OverlayMenu(props) {
@@ -577,13 +585,13 @@ var OverlayMenu = function OverlayMenu(props) {
         lineNumber: 11
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["NavItems"], {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["NavItems"], _extends({}, context, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 12
       },
       __self: this
-    }));
+    })));
   });
 };
 
