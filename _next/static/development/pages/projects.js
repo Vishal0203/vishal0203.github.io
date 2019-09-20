@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _data_projects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./data/projects */ "./components/data/projects.json");
 var _data_projects__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./data/projects */ "./components/data/projects.json", 1);
-var _jsxFileName = "/Users/avshash/Documents/Projects/portfolio/components/ProjectList.js";
+var _jsxFileName = "/Users/vishalsharma/Documents/Projects/portfolio/components/ProjectList.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -62,19 +62,19 @@ var Project = function Project(_ref) {
       lineNumber: 9
     },
     __self: this
-  }, project.description, project.tech && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+  }, project.description), project.tech && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+  }, "Technologies Used:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
-  }), " Built with: ", project.tech)));
+  }), " ", project.tech));
 };
 
 var ProjectList =
@@ -95,7 +95,7 @@ function (_Component) {
         className: this.props.className,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 22
         },
         __self: this
       }, Array.from(_data_projects__WEBPACK_IMPORTED_MODULE_2__).map(function (project, i) {
@@ -104,7 +104,7 @@ function (_Component) {
           project: project,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 25
+            lineNumber: 23
           },
           __self: this
         });
@@ -129,10 +129,10 @@ Project.propTypes = {
 /*!***************************************!*\
   !*** ./components/data/projects.json ***!
   \***************************************/
-/*! exports provided: 0, 1, 2, 3, default */
+/*! exports provided: 0, 1, default */
 /***/ (function(module) {
 
-module.exports = [{"link":"https://github.com/Vishal0203/collegemate","title":"Collegemate","description":"A platform for budding engineers to bridge gap between college and industries.","tech":"ReactJS, Redux, Material-UI, Laravel, NodeJS, hosted with docker."},{"link":"https://www.nowfloats.com","title":"NowFloats.com","description":"Built for: NowFloats Technologies","tech":"Handlebars JS, JQuery, NodeJs and Kitsune."},{"link":"https://www.npmjs.com/package/file-include-webpack-plugin","title":"file-include-webpack-plugin","description":"A webpack plugin to include html partials in parent html files, like gulp-file-include. This plugin was built to suffice the goal of removing dependencies from gulp at NowFloats Technologies."},{"link":"https://github.com/Vishal0203/UrbanUrn","title":"UrbanUrn","description":"An e-commerce platform for handicrafts. A complete solution from on-boarding sellers to selling their goods.","tech":"Django and Angular JS."}];
+module.exports = [{"link":"https://github.com/Vishal0203/collegemate","title":"Collegemate","description":"A platform for budding engineers to bridge gap between college and industries.","tech":"ReactJS, Redux, Material-UI, Laravel, NodeJS, and deployed using Amazon ECS"},{"link":"https://www.npmjs.com/package/file-include-webpack-plugin","title":"file-include-webpack-plugin","description":"A webpack plugin to include html partials in parent html files, like gulp-file-include. This plugin was built to suffice the goal of removing dependencies from gulp at NowFloats Technologies."}];
 
 /***/ }),
 
@@ -362,26 +362,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledProjectList", function() { return StyledProjectList; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _ProjectList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ProjectList */ "./components/ProjectList.js");
-/* harmony import */ var _Mixins__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Mixins */ "./components/styles/Mixins.js");
-function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n        font-size: 1.4em;\n      "]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-
 
 
 var StyledProjectList = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(_ProjectList__WEBPACK_IMPORTED_MODULE_1__["default"]).withConfig({
   displayName: "StyledProjectList",
   componentId: "sc-54mgm9-0"
-})(["padding:0;list-style:none;li{margin-bottom:2.5em;a{font-size:1.2em;font-weight:500;", "}p{margin:.5em 0;}}"], _Mixins__WEBPACK_IMPORTED_MODULE_2__["media"].tabletPortrait(_templateObject()));
+})(["padding:0;list-style:none;li{margin-bottom:2em;a{font-size:1.4em;font-weight:600;}p{margin:.8em 0;}}"]);
 
 /***/ }),
 
@@ -7818,7 +7804,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/styles/GlobalStyles */ "./components/styles/GlobalStyles.js");
 /* harmony import */ var _components_styles_GeneralStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/styles/GeneralStyles */ "./components/styles/GeneralStyles.js");
 /* harmony import */ var _components_styles_StyledProjectList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/styles/StyledProjectList */ "./components/styles/StyledProjectList.js");
-var _jsxFileName = "/Users/avshash/Documents/Projects/portfolio/pages/projects.js";
+var _jsxFileName = "/Users/vishalsharma/Documents/Projects/portfolio/pages/projects.js";
 
 
 
